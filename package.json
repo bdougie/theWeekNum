@@ -1,5 +1,5 @@
 {
-  "name": "theweeknum",
+  "name": "@bdougie/theweeknum",
   "version": "0.0.3",
   "description": "a package that tells you the week number",
   "main": "index.js",
