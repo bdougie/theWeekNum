@@ -1,9 +1,6 @@
 name: Node.js Package
 
 on:
-  pull_request:
-    branches:
-      - master
   push:
     branches:
       - master
@@ -42,6 +39,6 @@ jobs:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
           scope: '@bdougie'
-      - run: npm publish
+      - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
