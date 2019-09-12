@@ -22,7 +22,7 @@
 ## Usage
 
 ```
-const weekNum = require('theweeknum')
+const weekNum = require('@bdougie/theweeknum')
 
 console.log(weekNum())
 ```
@@ -30,7 +30,7 @@ console.log(weekNum())
 ## Install
 
 ```sh
-npm install
+npm install @bdougie/theweeknum
 ```
 
 ## Run tests
