@@ -43,7 +43,7 @@ npm run test
 
 👤 **bdougie**
 
-* Github: [@bdougie](https://github.com/bdougie)
+* GitHub: [@bdougie](https://github.com/bdougie)
 
 ## 🤝 Contributing
 
