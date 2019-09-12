@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to theweeknum 👋</h1>
+<h1 align="center">@bdougie/theweeknum 👋</h1>
 <p>
   <a href="https://www.npmjs.com/package/theweeknum">
     <img alt="Version" src="https://img.shields.io/npm/v/theweeknum.svg">
@@ -19,7 +19,7 @@
 ### 🏠 [Homepage](https://github.com/bdougie/theWeekNum#readme)
 
 
-# Usage
+## Usage
 
 ```
 const weekNum = require('theweeknum')
