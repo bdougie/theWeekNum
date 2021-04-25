@@ -4,7 +4,8 @@
   "description": "a package that tells you the week number",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/bdougie/theWeekNum#readme",
   "devDependencies": {
-    "jest": "^26.1.0"
+    "jest": "^26.1.0",
+    "standard-version": "^9.2.0"
   }
 }
