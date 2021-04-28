@@ -57,7 +57,7 @@ jobs:
         run: | 
           git push --follow-tags origin main
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.BDOUGIE_TOKEN }}
 
   publish-npm:
     needs: bump
