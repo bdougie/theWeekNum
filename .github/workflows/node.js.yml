@@ -40,4 +40,4 @@ jobs:
     - name: Bump semantic node-version
       if: github.event_name == 'pull_request' && github.event.action == 'closed'
       run: npm run release
-        
+    - run: git push --follow-tags origin main
