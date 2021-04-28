@@ -41,4 +41,5 @@ jobs:
       if: github.event_name == 'pull_request' && github.event.action == 'closed'
       run: npm run release
     - name: Push tags
+      if: github.event_name == 'pull_request' && github.event.action == 'closed'
       run: git push --follow-tags origin main
