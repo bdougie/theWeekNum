@@ -32,14 +32,4 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
-    - name: set git user
-      if: github.event_name == 'pull_request' && github.event.action == 'closed'
-      run: |
-        git config --global user.name ${GITHUB_ACTOR}
-        git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-    - name: Bump semantic node-version
-      if: github.event_name == 'pull_request' && github.event.action == 'closed'
-      run: npm run release
-    - name: Push tags
-      if: github.event_name == 'pull_request' && github.event.action == 'closed'
-      run: git push --follow-tags origin main
+
