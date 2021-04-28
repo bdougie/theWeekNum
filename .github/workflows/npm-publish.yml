@@ -35,7 +35,7 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v1
       - name: Cache node modules
         uses: actions/cache@v2
         with:
@@ -44,15 +44,17 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
       - run: npm ci
-      - name: set git user
+      - name: set git user and remote
         run: |
           git config --global user.name ${GITHUB_ACTOR}
           git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          git show-ref 
+          git branch --verbose
+
       - name: Bump semantic node-version
         run: npm run release
       - name: Push tags
         run: | 
-          git show-ref 
           git push --follow-tags origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
