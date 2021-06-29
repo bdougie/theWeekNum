@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/bdougie/theWeekNum#readme",
   "devDependencies": {
-    "jest": "^26.1.0",
+    "jest": "^27.0.6",
     "standard-version": "^9.2.0"
   }
 }
